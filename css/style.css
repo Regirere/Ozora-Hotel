@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/full\ bg.png);
+    background-color: rgb(36, 8, 59);
+}
+
+#wrapper {
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slideshow-container {
+    max-width: 990px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    display: none;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 9px;
+    width: 9px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin: 0 2.5px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+
+    to {opacity: 1}
+}
+
+.topslide img{
+    height: 650px;
+}
+
+#ozoratitle img {
+    position: relative;
+    top: -130px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#wholenavi {
+    display: flex;
+    position: sticky;
+    margin-top: -137px;
+    overflow: hidden;
+}
+
+#wholenavi :hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#fopt {
+    background: url(img/bgone\ spare.png);
+    margin-top: -7px;
+    height: 920px;
+}
+
+#ribbon img {
+    max-width: 990px;
+    margin-top: 20px;
+    margin-left: 22px;
+}
+
+#slidebox img {
+    padding: 0 207.5px 0;
+}
+
+.foptcontainer {
+    width: 575px;
+    height: 370px;
+    background: #200d06; 
+    /*display: flex; (jaga2 kl butuh)*/
+    justify-content: center; /* kiri kanan */
+    align-items: center; /* atas bawah */
+}
+
+.foptslide img {
+    height: 356px;
+    width: 535px;
+    padding-top: 13px;
+    display: block;
+}
+
+.point {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 125%;
+    top: 50%;
+    left: -12.5%;
+}
+
+.foptslide {
+    height: 950px;
+}
+
+.caption {
+    text-align: center;
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    color: #361a0c;
+    padding-top: 15px;
+}
+
+.firstdot {
+    text-align: center;
+    margin-top: -599px;
+}
+
+.plan {
+    display: flex;
+    margin: 65px 50px;
+    padding: 25px 0px;
+}
+
+#hantu img {
+    height: 50%;
+    width: 50%;
+}
+
+#semuaplan {
+    margin-bottom: 500px 0px;
+}
+
+#planbutton {
+    position: relative;
+    margin: -90px 42px;
+}
+
+#planbutton :hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#sopt {
+    background: url(img/backgroundtwo\ spare.png);
+    background-size: cover;
+    height: 950px;
+}
+
+#sopttitle img {
+    max-width: 990px;
+    margin: 35px 145px;
+}
+
+#slidebox img {
+    padding: 0 207.5px 0;
+}
+
+.soptcontainer {
+    width: 575px;
+    height: 370px;
+    background: #200d06;
+    /*display: flex; (jaga2 kl butuh)*/
+    justify-content: center;
+    /* kiri kanan */
+    align-items: center;
+    /* atas bawah */
+}
+
+.soptslide img {
+    height: 356px;
+    width: 535px;
+    padding-top: 13px;
+    display: block;
+}
+
+.point {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 125%;
+    top: 50%;
+    left: -12.5%;
+}
+
+.soptslide {
+    height: 950px;
+}
+
+.secdot {
+    text-align: center;
+    margin-top: -599px;
+}
+
+.captiontwo {
+    text-align: center;
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    color: #29140c;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+#plantengah {
+    display: flex;
+    margin-top: -75px;
+    margin-left: 260px;
+}
+
+#tomboltengah {
+    margin: 120px -330px;
+}
+
+#tomboltengah :hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#topt {
+    background: url(img/backgroundthreeall\ spare.png);
+    height: 1250px;
+}
+
+#ribbonthree img {
+    max-width: 990px;
+    margin-top: 20px;
+    margin-left: 22px;
+}
+
+#slidebox img {
+    padding: 0 207.5px 0;
+}
+
+.toptcontainer {
+    width: 575px;
+    height: 370px;
+    background: #230036;
+    /*display: flex; (jaga2 kl butuh)*/
+    justify-content: center;
+    /* kiri kanan */
+    align-items: center;
+    /* atas bawah */
+}
+
+.toptslide img {
+    height: 356px;
+    width: 535px;
+    padding-top: 13px;
+    display: block;
+}
+
+.point {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 125%;
+    top: 50%;
+    left: -12.5%;
+}
+
+.toptslide {
+    height: 390px;
+}
+
+.captionthree {
+    text-align: center;
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    color: #ffcebc;
+    padding-top: 0px;
+    font-size: 19px;
+}
+
+.planboxthree {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#planboxthreeatas {
+    margin: -60px -140px;
+}
+
+#planbuttonatas {
+    margin: -87px 235px
+}
+
+#planbuttonatas :hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#planboxthreebawah {
+    margin: 180px -627px;
+}
+
+#planbuttonbawah {
+    margin: -87px 235px
+}
+
+#planbuttonbawah :hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#eopt {
+    background: url(img/bgfour.png);
+    height: 1100px;
+}
+
+#slidebox img {
+    padding: 0 207.5px 0;
+}
+
+.eoptcontainer {
+    width: 575px;
+    height: 370px;
+    background: #230036;
+    /*display: flex; (jaga2 kl butuh)*/
+    justify-content: center;
+    /* kiri kanan */
+    align-items: center;
+    /* atas bawah */
+    margin-top: 25px;
+}
+
+.eoptslide img {
+    height: 356px;
+    width: 535px;
+    padding-top: 13px;
+    display: block;
+}
+
+.point {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 125%;
+    top: 50%;
+    left: -12.5%;
+}
+
+.eoptslide {
+    height: 950px;
+}
+
+.fourthdot {
+    text-align: center;
+    margin-top: -599px;
+}
+
+.captionfour {
+    margin: 20px 85px;
+}
+
+.ratingfour {
+    margin: -10px 80px;
+}
+
+#footer {
+    background: url(img/bg\ footer.png);
+    padding: 100px 0px;
+}
+
+/*#footer img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+} */
+
+#kupon {
+    margin: -50px 240px;
+}
+
+#kuponbutton :hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#flight {
+    display: flex;
+    padding: 10px 50px;
+    margin: 0px 0px;
+}
+
+#flight :hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#ana {
+    margin: 56px 0px;
+}
+
+#ichiranplan {
+    margin: -70px 240px;
+}
+
+#ichiranplan :hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
